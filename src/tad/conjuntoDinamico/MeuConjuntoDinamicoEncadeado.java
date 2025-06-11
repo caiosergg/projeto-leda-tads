@@ -1,5 +1,16 @@
 package tad.conjuntoDinamico;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar um conjunto dinâmico de inteiros baseado em lista encadeada simples,
+ * permitindo inserção, remoção, busca, sucessor, predecessor, mínimo e máximo, com gerenciamento
+ * dinâmico da estrutura sem uso de arrays fixos.
+ */
+
 import tad.ElementoNaoEncontradoException;
 
 public class MeuConjuntoDinamicoEncadeado implements ConjuntoDinamicoIF<Integer> {

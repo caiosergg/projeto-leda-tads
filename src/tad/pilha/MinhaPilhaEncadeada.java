@@ -1,5 +1,16 @@
 package tad.pilha;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar uma pilha de inteiros com alocação dinâmica (baseada em lista encadeada),
+ * permitindo operações básicas como empilhar, desempilhar, consultar o topo,
+ * além de consultar tamanho e capacidade.
+ */
+
 public class MinhaPilhaEncadeada implements PilhaIF<Integer> {
 
 	private static class Node {
@@ -60,6 +71,14 @@ public class MinhaPilhaEncadeada implements PilhaIF<Integer> {
 		return tamanho;
 	}
 
+	/**
+     * Compara esta pilha com outro objeto para verificar igualdade.
+     * Duas pilhas são iguais se têm o mesmo tamanho e os mesmos elementos na mesma ordem.
+     * 
+     * @param obj objeto a comparar
+     * @return true se forem iguais, false caso contrário
+     */
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof PilhaIF)) return false;

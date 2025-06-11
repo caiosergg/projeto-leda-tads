@@ -1,5 +1,16 @@
 package tad.listasEncadeadas;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar uma lista encadeada simples genérica com nós sentinela,
+ * suportando operações básicas como inserção, remoção, busca, sucessor, predecessor,
+ * conversão para array e impressão em ordem e inversa.
+ */
+
 import tad.ElementoNaoEncontradoException;
 import tad.util.Conversor;
 
@@ -24,6 +35,14 @@ public class ListaEncadeadaImpl<T extends Comparable<T>> implements ListaEncadea
     public int size() {
         return tamanho;
     }
+
+    /**
+     * Busca o primeiro nó cujo conteúdo é igual à chave fornecida.
+     * Retorna uma cópia do nó encontrado, contendo o valor e (se existir) uma cópia do próximo nó.
+     * 
+     * @param chave o valor a ser buscado na lista
+     * @return uma cópia do nó encontrado, ou null se não encontrado
+     */
 
     @Override
     public NodoListaEncadeada<T> search(T chave) {
@@ -54,6 +73,18 @@ public class ListaEncadeadaImpl<T extends Comparable<T>> implements ListaEncadea
         novo.setProximo(cauda);
         tamanho++;
     }
+
+    /**
+     * Remove o nó cujo conteúdo é igual à chave fornecida.
+     * Lança ListaVaziaException se a lista estiver vazia.
+     * Lança ElementoNaoEncontradoException se o elemento não for encontrado.
+     * Retorna uma cópia do nó removido, contendo o valor e (se existir) uma cópia do próximo nó.
+     * 
+     * @param chave o valor a ser removido
+     * @return uma cópia do nó removido
+     * @throws ElementoNaoEncontradoException se a chave não for encontrada
+     * @throws ListaVaziaException se a lista estiver vazia
+     */
 
     @Override
     public NodoListaEncadeada<T> remove(T chave) throws ElementoNaoEncontradoException, ListaVaziaException {
@@ -148,6 +179,15 @@ public class ListaEncadeadaImpl<T extends Comparable<T>> implements ListaEncadea
         }
         throw new ElementoNaoEncontradoException();
     }
+
+    /**
+     * Insere um novo nó com a chave especificada na posição indicada pelo índice.
+     * Lança IndexOutOfBoundsException se o índice for inválido.
+     * O índice 0 indica inserção logo após a cabeça (início da lista).
+     * 
+     * @param chave o valor a ser inserido
+     * @param index posição onde o novo nó será inserido (0 <= index <= tamanho)
+     */
 
     @Override
     public void insert(T chave, int index) {

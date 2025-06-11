@@ -1,5 +1,16 @@
 package tad.pilha;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar uma pilha de inteiros com alocação estática (baseada em array),
+ * permitindo operações básicas como empilhar, desempilhar, consultar o topo,
+ * além de verificar tamanho, capacidade e multitop.
+ */
+
 public class MinhaPilha implements PilhaIF<Integer> {
 	
 	private int tamanho = 5;

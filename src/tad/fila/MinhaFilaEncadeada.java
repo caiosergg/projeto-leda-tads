@@ -1,5 +1,16 @@
 package tad.fila;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar uma fila de inteiros baseada em lista encadeada simples,
+ * permitindo enfileirar, desenfileirar, consultar cabeça e cauda, além de operações
+ * auxiliares como verificar se está vazia e obter o tamanho.
+ */
+
 public class MinhaFilaEncadeada implements FilaIF<Integer> {
 
     private static class Node {

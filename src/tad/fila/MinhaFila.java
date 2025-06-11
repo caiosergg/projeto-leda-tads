@@ -1,5 +1,16 @@
 package tad.fila;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar uma fila de inteiros com alocação estática (baseada em array circular),
+ * permitindo operações básicas como enfileirar, desenfileirar, verificar cabeça e cauda,
+ * além de consultar tamanho e capacidade.
+ */
+
 public class MinhaFila implements FilaIF<Integer> {
 
     private int tamanho = 5;

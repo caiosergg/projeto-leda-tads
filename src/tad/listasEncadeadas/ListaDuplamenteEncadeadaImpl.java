@@ -1,5 +1,16 @@
 package tad.listasEncadeadas;
 
+/**
+ * Nome: Caio Sérgio Ramalho Lima
+ * Matrícula: 211080411
+ * 
+ * Roteiro: Roteiro 5 - TADs
+ * 
+ * Objetivo: Implementar uma lista duplamente encadeada genérica com nós sentinela,
+ * suportando operações básicas como inserção, remoção, busca, sucessor, predecessor,
+ * conversão para array e impressão em ordem e inversa.
+ */
+
 import tad.ElementoNaoEncontradoException;
 import tad.util.Conversor;
 
