@@ -34,3 +34,5 @@ Executar os testes JUnit disponíveis na pasta `testes/` para validar as impleme
 ---
 
 Desenvolvido como atividade acadêmica para reforçar conceitos de estruturas de dados dinâmicas e estáticas.
+
+---
