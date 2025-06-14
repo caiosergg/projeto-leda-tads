@@ -12,11 +12,11 @@ package tad.estruturas;
  *
  */
 
-import tad.fila.FilaIF;
 import tad.fila.FilaCheiaException;
+import tad.fila.FilaIF;
 import tad.fila.FilaVaziaException;
-import tad.listasEncadeadas.NodoListaEncadeada;
 import tad.listasEncadeadas.ListaVaziaException;
+import tad.listasEncadeadas.NodoListaEncadeada;
 
 public class FilaListaEncadeada<E extends Comparable<E>> implements FilaIF<E> {
 
