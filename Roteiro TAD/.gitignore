@@ -1,1 +1,14 @@
+# Ignorar pastas de compilação
 /bin/
+/out/
+
+# Ignorar arquivos temporários do Eclipse/VSCode
+*.class
+*.log
+*.tmp
+*.swp
+.DS_Store
+.settings/
+.vscode/
+.project
+.classpath
